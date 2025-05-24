@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight">Shardul S Dhiwar</span></h1>
+                <p class="subtitle">Web Developer & Designer</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                    <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="manOnTable.svg" alt="Developer Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I love creating beautiful and functional websites that provide great user experiences.</p>
+                <p>With a keen eye for design and a dedication to clean code, I strive to build websites that are both visually appealing and technically sound.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>MongoDB</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node"></i>
+                <h3>Express.js</h3>
+            </div>
+            <!-- <div class="skill-card">
+                <i class="fab fa-vuejs"></i>
+                <h3>Vue.js</h3>
+             </div> -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://media.istockphoto.com/id/1445426863/vector/chat-bot-vector-logo-design-concept.jpg?s=612x612&w=0&k=20&c=XDdfzS4lNW9yxQ0BQGZq9KMLL4bJ8ywXlYdAhBSuoCA=" alt="Project 1">
+                <h3>VAST-A Mental Health Chatbot</h3>
+                <p>VAST is a mental health chatbot designed to provide emotional support, stress management tips, and coping strategies. It offers a safe, non-judgmental space for users to express their feelings, using conversational AI to simulate supportive dialogue. VAST helps users track moods, learn mindfulness techniques, and connect to professional resources if needed.</p>
+                <div class="project-links">
+                    <!-- <a href="#" class="btn small">View Demo</a> -->
+                    <a href="https://github.com/ShardulDhiwar/VAST-A-Mental-Health-Chatbot" class="btn small">Source Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://img.freepik.com/premium-vector/computer-mouse-with-black-white-drawing-mouse_670382-360685.jpg" alt="Project 2">
+                <h3>Virtual Mouse Controller</h3>
+                <p>Virtual Mouse Controller using Hand Gestures is a computer vision project that lets you control your mouse using just hand movements — no physical mouse needed. It uses a webcam to track your hand gestures (like moving, clicking, dragging) with the help of libraries like OpenCV and Mediapipe. Fingertip positions are mapped to cursor coordinates, and specific gestures (like pinching) trigger mouse clicks. It's a cool, touch-free way to interact with your computer!</p>
+                <div class="project-links">
+                    <!-- <a href="#" class="btn small">View Demo</a> -->
+                    <a href="https://github.com/ShardulDhiwar/Virtual-Mouse-Controller" class="btn small">Source Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://img.freepik.com/free-vector/blue-notification-message-chat-icon-attention-sms-sign-internet-message-3d-rendering_40876-3450.jpg" alt="ChatMe">
+                <h3>ChatMe</h3>
+                <p>ChatMe is a simple real-time chat application that allows users to communicate instantly. Built with React and Socket.IO, it provides a clean interface for one-time conversations. Users can join chat rooms and exchange messages in real-time without the need for authentication or message history storage.</p>
+                <div class="project-links">
+                    <!-- <a href="#" class="btn small">View Demo</a> -->
+                    <a href="https://github.com/ShardulDhiwar/ChatMe" class="btn small">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shadrul S Dhiwar. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
