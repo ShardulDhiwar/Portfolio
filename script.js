@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
@@ -92,5 +90,42 @@ document.addEventListener('DOMContentLoaded', () => {
         section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
         observer.observe(section);
     });
+  
+    // Projects Carousel
+    const projectsGrid = document.querySelector('.projects-grid');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const cardWidth = projectsGrid.querySelector('.project-card').offsetWidth + 32; // Width of card + gap
+    let currentPosition = 0;
+
+    function updateCarouselButtons() {
+        const maxScroll = projectsGrid.scrollWidth - projectsGrid.clientWidth;
+        prevBtn.disabled = currentPosition <= 0;
+        nextBtn.disabled = currentPosition >= maxScroll;
+    }
+
+    function scrollCarousel(direction) {
+        const scrollAmount = direction === 'next' ? cardWidth : -cardWidth;
+        currentPosition = Math.max(0, Math.min(currentPosition + scrollAmount, projectsGrid.scrollWidth - projectsGrid.clientWidth));
+        projectsGrid.scrollTo({
+            left: currentPosition,
+            behavior: 'smooth'
+        });
+        updateCarouselButtons();
+    }
+
+    // Event Listeners
+    prevBtn.addEventListener('click', () => scrollCarousel('prev'));
+    nextBtn.addEventListener('click', () => scrollCarousel('next'));
+
+    // Update button states on load and resize
+    window.addEventListener('resize', () => {
+        const newCardWidth = projectsGrid.querySelector('.project-card').offsetWidth + 32;
+        cardWidth = newCardWidth;
+        updateCarouselButtons();
+    });
+
+    // Initialize
+    updateCarouselButtons();
   });
   
