@@ -477,7 +477,7 @@
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: var(--shadow-hover);
+            box-shadow: var(--shadow-lg);
             display: grid;
             grid-template-columns: 1fr 1fr;
             min-height: 450px;
@@ -857,3 +857,4 @@
     }
   }
   
+
